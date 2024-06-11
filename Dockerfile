@@ -1,14 +1,23 @@
+FROM python:3.10-slim-buster
 
+# Create a non-root user
+RUN useradd -ms /bin/bash movieverse
 
-FROM python:3.10.8-slim-buster
+# Update and install dependencies
+RUN apt-get update && apt-get upgrade -y \
+    && apt-get install -y git build-essential
 
-RUN apt update && apt upgrade -y
-RUN apt install git -y
-COPY requirements.txt /requirements.txt
+WORKDIR /bot
+# Copy requirements file separately and install dependencies
+COPY requirements.txt /bot/requirements.txt
+RUN pip install --upgrade pip && pip install -U -r requirements.txt
 
-RUN cd /
-RUN pip3 install -U pip && pip3 install -U -r requirements.txt
-RUN mkdir /VJ-FILTER-BOT
-WORKDIR /VJ-FILTER-BOT
-COPY . /VJ-FILTER-BOT
-CMD ["python", "bot.py"]
+COPY . .
+
+# Set ownership of the application directory to the non-root user
+RUN chown -R movieverse:movieverse /bot
+
+# Switch to the non-root user
+USER movieverse
+
+CMD ["python3", "bot.py"]
