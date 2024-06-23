@@ -196,7 +196,7 @@ Select Your Language And Earn Money"""
 Size️: {file_size}<\b>""" 
 
     IMDB_TEMPLATE_TXT = """
-<b>Title: {query}
+<b>Title: {title}
 
 Genres: {genres}
 Rating: {rating}/10 Based on {votes} user ratings.
@@ -281,12 +281,11 @@ Aᴠᴀɪʟᴀʙʟᴇ ᴄᴏᴍᴍᴀɴᴅs:
  </b>""" 
 
     PROGRESS_BAR = """\n
-╭━━━━❰ Renaming... ❱━➣
-┣⪼ 🗂️ : {1} | {2}
-┣⪼ ⏳️ : {0}%
-┣⪼ 🚀 : {3}/s
-┣⪼ ⏱️ : {4}
-╰━━━━━━━━━━━━━━━➣ """
+
+File Size : {1} | {2}
+Persentage : {0}%
+Speed : {3}/s
+Time : {4} """
   
     ABOOK_TXT = """<b>ʜᴇʟᴩ : ᴀᴜᴅɪᴏʙᴏᴏᴋ 
   
