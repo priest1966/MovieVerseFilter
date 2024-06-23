@@ -35,7 +35,7 @@ AUTH_USERS = (auth_users + ADMINS) if auth_users else []
 # if REQUEST_TO_JOIN_MODE is true then force subscribe work like request to join fsub, else if false then work like normal fsub.
 REQUEST_TO_JOIN_MODE = bool(environ.get('REQUEST_TO_JOIN_MODE', False)) # Set True Or False
 TRY_AGAIN_BTN = bool(environ.get('TRY_AGAIN_BTN', False)) # Set True Or False
-auth_channel = environ.get('AUTH_CHANNEL', '-1001958911015') # give your force subscribe channel id here else leave it blank
+auth_channel = environ.get('AUTH_CHANNEL', '-1002050647275') # give your force subscribe channel id here else leave it blank
 auth_grp = environ.get('AUTH_GROUP', '-1002055042397') # give your force subscribe group id here else leave it blank
 AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_channel) else None
 AUTH_GROUPS = [int(ch) for ch in auth_grp.split()] if auth_grp else None
@@ -108,7 +108,7 @@ PORT = environ.get("PORT", "8081")
 MSG_ALRT = environ.get('MSG_ALRT', 'Wʜᴀᴛ Aʀᴇ Yᴏᴜ Lᴏᴏᴋɪɴɢ Aᴛ ?')
 CUSTOM_FILE_CAPTION = environ.get("CUSTOM_FILE_CAPTION", "<b>File Name</b>: {file_name} \n\n<b>File Size:</b> {file_size}\n\n<b>Join Us:</b> [MovieVerse](https://t.me/movieversepremium)")
 BATCH_FILE_CAPTION = environ.get("BATCH_FILE_CAPTION", "<b>File Name</b>: {file_name} \n\n\n\n<b>Join Us:</b> [MovieVerse](https://t.me/movieversepremium)")
-IMDB_TEMPLATE = environ.get("IMDB_TEMPLATE", f"{script.IMDB_TEMPLATE_TXT}")
+IMDB_TEMPLATE = environ.get("IMDB_TEMPLATE", "<b>{query}\n\nGenres: {genres}\nRating: {rating}/10 Based on {votes} user ratings.\nLanguages : Hindi or English\nRunTime: {runtime} Minutes\nRelease Info : {release_date}\n\nDownload {query} From Here\n\n[MovieVerse Backup](https://t.me/movieversepremium)</b>")
 MAX_LIST_ELM = environ.get("MAX_LIST_ELM", None)
 
 # Choose Option Settings 
