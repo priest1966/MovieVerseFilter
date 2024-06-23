@@ -106,9 +106,9 @@ SHORTLINK_API = environ.get('SHORTLINK_API', 'ca7ccd8b6e197a03f98baec5078920bf26
 MAX_B_TN = environ.get("MAX_B_TN", "5")
 PORT = environ.get("PORT", "8081")
 MSG_ALRT = environ.get('MSG_ALRT', 'Wʜᴀᴛ Aʀᴇ Yᴏᴜ Lᴏᴏᴋɪɴɢ Aᴛ ?')
-CUSTOM_FILE_CAPTION = environ.get("CUSTOM_FILE_CAPTION", "<b>File Name</b>: {file_name} \n\n<b>File Size:</b> {file_size}\n\n<b>Join Us:</b> [MovieVerse](https://t.me/movieversepremium)")
-BATCH_FILE_CAPTION = environ.get("BATCH_FILE_CAPTION", "<b>File Name</b>: {file_name} \n\n\n\n<b>Join Us:</b> [MovieVerse](https://t.me/movieversepremium)")
-IMDB_TEMPLATE = environ.get("IMDB_TEMPLATE", "<b>{query}\n\nGenres: {genres}\nRating: {rating}/10 Based on {votes} user ratings.\nLanguages : Hindi or English\nRunTime: {runtime} Minutes\nRelease Info : {release_date}\n\nDownload {query} From Here\n\n[MovieVerse Backup](https://t.me/movieversepremium)</b>")
+CUSTOM_FILE_CAPTION = environ.get("CUSTOM_FILE_CAPTION", "<b>File Name</b>: {file_name}\n\n<b>File Size:</b> {file_size}\n\nDuration: {duration}\n\n<b>Join Us: [MovieVerse Backup](https://t.me/movieversepremium)</b>")
+BATCH_FILE_CAPTION = environ.get("BATCH_FILE_CAPTION", "<b>File Name</b>: {file_name}\n\nDuration: {duration}\n\n<b>Join Us: [MovieVerse Backup](https://t.me/movieversepremium)</b>")
+IMDB_TEMPLATE = environ.get("IMDB_TEMPLATE", "<b>{title}\n\nGenres: {genres}\nRating: {rating}/10 Based on {votes} user ratings.\nLanguages: Hindi or English\nRunTime: {runtime} Minutes\nRelease Info: {release_date}\n\nDownload {query} From Here\n\n[MovieVerse Backup](https://t.me/movieversepremium)</b>")
 MAX_LIST_ELM = environ.get("MAX_LIST_ELM", None)
 
 # Choose Option Settings 

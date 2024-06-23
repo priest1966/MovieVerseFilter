@@ -193,19 +193,19 @@ Select Your Language And Earn Money"""
 
     CAPTION = """<b>Fɪʟᴇɴᴀᴍᴇ : {file_name}
 
-<b> Size️: {file_size}</b>""" 
+Size️: {file_size}<\b>""" 
 
     IMDB_TEMPLATE_TXT = """
-"<b>{query}
+<b>Title: {query}
 
 Genres: {genres}
 Rating: {rating}/10 Based on {votes} user ratings.
 RunTime: {runtime} Minutes
-Release Info : {release_date}
+Release Info: {release_date}
 
-Requested by : {message.from_user.mention}</b>
+Requested by: {message.from_user.mention}
 
-[MovieVerse Backup](https://t.me/movieversepremium)</b>""""
+Join Us: [MovieVerse Backup](https://t.me/movieversepremium)</b>"""
     
     ALL_FILTERS = """
 <b>Hᴇʏ {}, Tʜᴇsᴇ ᴀʀᴇ ᴍʏ ᴛʜʀᴇᴇ ᴛʏᴘᴇs ᴏғ ғɪʟᴛᴇʀs.</b>"""
