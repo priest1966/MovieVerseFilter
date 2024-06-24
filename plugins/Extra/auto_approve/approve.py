@@ -104,7 +104,7 @@ async def auto_approve(client, message: ChatJoinRequest):
             if is_valid == True:
                 await client.send_message(
                     chat_id=message.from_user.id,
-                    text=f"<b>Hey {message.from_user.mention}, You are successfully verified !\nNow you have unlimited access for all movies till today midnight.</b>",
+                    text=f"<b>Hey {message.from_user.mention}, You are successfully verified !\nNow you have unlimited access for all movies till today midnight.\n\nBuy premium membership and say goodbye to ads. Check Our /planly verified !\nNow you have unlimited access for all movies till today midnight.</b>",
                     protect_content=True
                 )
                 await verify_user(client, userid, token)
@@ -175,7 +175,7 @@ async def auto_approve(client, message: ChatJoinRequest):
                         ]]
                         await client.send_message(
                             chat_id=message.from_user.id,
-                            text="<b>You are not verified !\nKindly verify to continue and use bot for midnight!\n\nBuy premium membership and say goodbye to ads. Check out /plan</b>",
+                            text="<b>You are successfully verified !\nNow you have unlimited access for all movies till today midnight.\n\nBuy premium membership and say goodbye to ads. Check Our /plan</b>",
                             protect_content=True,
                             reply_markup=InlineKeyboardMarkup(btn)
                         )

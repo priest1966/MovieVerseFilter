@@ -89,12 +89,12 @@ USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', True))
 
 # Token Verification Info :
 VERIFY = bool(environ.get('VERIFY', True))
-VERIFY_SECOND_SHORTNER = bool(environ.get('VERIFY_SECOND_SHORTNER', False))
+VERIFY_SECOND_SHORTNER = bool(environ.get('VERIFY_SECOND_SHORTNER', True))
 VERIFY_SHORTLINK_URL = environ.get('VERIFY_SHORTLINK_URL', 'mdiskshortner.link')
 VERIFY_SHORTLINK_API = environ.get('VERIFY_SHORTLINK_API', 'ca7ccd8b6e197a03f98baec5078920bf26987dc2')
 # if verify second shortner is True then fill below url and api
-VERIFY_SND_SHORTLINK_URL = environ.get('VERIFY_SND_SHORTLINK_URL', '')
-VERIFY_SND_SHORTLINK_API = environ.get('VERIFY_SND_SHORTLINK_API', '')
+VERIFY_SND_SHORTLINK_URL = environ.get('VERIFY_SND_SHORTLINK_URL', 'omegalinks.in')
+VERIFY_SND_SHORTLINK_API = environ.get('VERIFY_SND_SHORTLINK_API', '9b3b87cc699f7874fa7193531decf02364770e73')
 VERIFY_TUTORIAL = environ.get('VERIFY_TUTORIAL', 'https://t.me/howtoverify_97/3')
 
 # Shortlink Info
@@ -108,7 +108,7 @@ PORT = environ.get("PORT", "8081")
 MSG_ALRT = environ.get('MSG_ALRT', 'Wʜᴀᴛ Aʀᴇ Yᴏᴜ Lᴏᴏᴋɪɴɢ Aᴛ ?')
 CUSTOM_FILE_CAPTION = environ.get("CUSTOM_FILE_CAPTION", "<b>File Name</b>: {file_name}\n\n<b>File Size:</b> {file_size}\n\n\n\n<b>Join Us: [MovieVerse Backup](https://t.me/movieversepremium)</b>")
 BATCH_FILE_CAPTION = environ.get("BATCH_FILE_CAPTION", "<b>File Name</b>: {file_name}\n\n\n\n<b>Join Us: [MovieVerse Backup](https://t.me/movieversepremium)</b>")
-IMDB_TEMPLATE = environ.get("IMDB_TEMPLATE", "<b>{title}\n\nGenres: {genres}\nRating: {rating}/10 Based on {votes} user ratings.\nLanguages: Hindi Or {languages}</b>\n<b>RunTime: {runtime} Minutes\nRelease Info: {release_date}</b>\n\n<b>Download {query} From Here\n\n[MovieVerse Backup](https://t.me/movieversepremium)</b>")
+IMDB_TEMPLATE = environ.get("IMDB_TEMPLATE", "<b>{title}</b>\n\n<b>Genres:</b> {genres}\n<b>Rating:</b> {rating}/10 Based on {votes} user ratings.\n<b>Languages: Hindi Or {languages}</b>\n<b>RunTime:</b> {runtime} Minutes\n<b>Release Info:</b> {release_date}\n\n<b>Total Seasons:</b> {seasons}\n\n<b>Story Line:</b> {plot}\n\n<b>Download {query} From Here\n\n[MovieVerse Backup](https://t.me/movieversepremium)</b>")
 MAX_LIST_ELM = environ.get("MAX_LIST_ELM", None)
 
 # Choose Option Settings 
@@ -139,11 +139,11 @@ RENAME_MODE = bool(environ.get('RENAME_MODE', True)) # Set True or False
 AUTO_APPROVE_MODE = bool(environ.get('AUTO_APPROVE_MODE', True)) # Set True or False
 
 # Save Restricted Info : If True Then Bot Save Content From Restricted Channel Else Not
-SAVE_RESTRICTED_MODE = bool(environ.get('SAVE_RESTRICTED_MODE', False)) # Set True or False
+SAVE_RESTRICTED_MODE = bool(environ.get('SAVE_RESTRICTED_MODE', True)) # Set True or False
 
 # if SAVE_RESTRICTED_MODE is True Then Fill String Session Variable In Your Server Environment Variable, If Flase Then No Need To Fill.
 # Warning: Never Fill String Session Variable In Your Repo, If You Fill Then Your Account Can Be Access By Anyone.
-SESSION_STRING = environ.get('SESSION_STRING', '') # PYROGRAM V2 Session 
+SESSION_STRING = environ.get('SESSION_STRING', 'BQANviwAOSuax91KJ49ZpY7_wYgFl2szvbSG8QAA5yZHYS4LFh_aMO9HegPpNzyDPWfFwC4osfZr_L4sMcVgbN6CeTRWaqPjNlXeHzzRDlRg0RfJs9_6KxebSKiE1-uFi1IzhGv2agso77huvPBrqxb0_ZQAm1XiapOO_mExrnURujp3l_gI_7F7jkhgWvim4GAS0MnEWOqr4g6yi0NQ6pW5tUSJMK7zABlcCeADZajjVO0UeWny65h7N7qxqBB7S49gme0lS0Tpvd9GP4KQDXGEtftXOeomuNf6jNBYktL0yLmdra5c-4k4B86kzIF3OaEcrG6m2idfoLx8SA6L1TOZty1_kwAAAAATq9txAA') # PYROGRAM V2 Session 
 
 LOG_STR = "Current Cusomized Configurations are:-\n"
 LOG_STR += ("IMDB Results are enabled, Bot will be showing imdb details for you queries.\n" if IMDB else "IMBD Results are disabled.\n")

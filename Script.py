@@ -14,7 +14,7 @@ Hᴇʀᴇ Is Tʜᴇ Hᴇʟᴘ Fᴏʀ Mʏ Cᴏᴍᴍᴀɴᴅs.</b>"""
 ‣ ʟɪʙʀᴀʀʏ : <a href='https://docs.pyrogram.org/'>ᴘʏʀᴏɢʀᴀᴍ</a> 
 ‣ ʟᴀɴɢᴜᴀɢᴇ : <a href='https://www.python.org/download/releases/3.0/'>ᴘʏᴛʜᴏɴ 3</a> 
 ‣ ᴅᴀᴛᴀ ʙᴀsᴇ : <a href='https://www.mongodb.com/'>ᴍᴏɴɢᴏ ᴅʙ</a> 
-‣ ʙᴜɪʟᴅ sᴛᴀᴛᴜs : ᴠ2.7.1 [sᴛᴀʙʟᴇ]></b>"""
+‣ ʙᴜɪʟᴅ sᴛᴀᴛᴜs : ᴠ2.7.1 [sᴛᴀʙʟᴇ]</b>"""
 
     SUBSCRIPTION_TXT = """
 <b>ʀᴇғᴇʀʀᴇ ʏᴏᴜʀ ʟɪɴᴋ ᴛᴏ ʏᴏᴜʀ ғʀɪᴇɴᴅs, ғᴀᴍɪʟʏ, ᴄʜᴀɴɴᴇʟ ᴀɴᴅ ɢʀᴏᴜᴘ ᴛᴏ ɢᴇᴛ ғʀᴇᴇ ᴘʀᴇᴍɪᴜᴍ ғᴏʀ {}
@@ -196,16 +196,18 @@ Select Your Language And Earn Money"""
 Size️: {file_size}<\b>""" 
 
     IMDB_TEMPLATE_TXT = """
-<b>Title: {title}
+<b>Title: {title}</b>
 
-Genres: {genres}
-Rating: {rating}/10 Based on {votes} user ratings.
-RunTime: {runtime} Minutes
-Release Info: {release_date}
+<b>Genres:</b> {genres}
+<b>Rating:</b> {rating}/10 Based on {votes} user ratings.
+<b>RunTime:</b> {runtime} Minutes
+<b>Release Info:</b> {release_date}
 
-Requested by: {message.from_user.mention}
+<b>Total Seasons:</b> {seasons}
 
-Join Us: [MovieVerse Backup](https://t.me/movieversepremium)</b>"""
+<b>Requested by: {message.from_user.mention}</b>
+
+<b>Join Us: [MovieVerse Backup](https://t.me/movieversepremium)</b>"""
     
     ALL_FILTERS = """
 <b>Hᴇʏ {}, Tʜᴇsᴇ ᴀʀᴇ ᴍʏ ᴛʜʀᴇᴇ ᴛʏᴘᴇs ᴏғ ғɪʟᴛᴇʀs.</b>"""
