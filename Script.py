@@ -511,7 +511,7 @@ Also your tutorial will be Added Your Group..."""
 
  चरण 2: अपनी वेबसाइट और एपीआई जोड़ें
 
- एक्सप: /शॉर्टलिंक omegalinks.in 9b3b87cc699f7874fa7193531decf02364770e73
+ एक्सप: /shortlink omegalinks.in 9b3b87cc699f7874fa7193531decf02364770e73
 
  एक वीडियो जोड़ें
 
@@ -685,7 +685,7 @@ Duration: {duration}
 
     STREAM_TXT = """<b><u>HOW TO GET STREAM AND DOWNLOAD LINK :</u>
 
-/stream - ɢᴇᴛ sᴛʀᴇᴀᴍᴀʙʟᴇ ᴀɴᴅ ᴅᴏᴡɴʟᴏᴀᴅᴀʙʟᴇ ʟɪɴᴋ ᴏғ ᴀɴʏ ғɪʟᴇ</b>"""
+Sorry but stream not working for now.</b>"""
 
 
 
