@@ -203,7 +203,6 @@ Size️: {file_size}<\b>"""
 <b>RunTime:</b> {runtime} Minutes
 <b>Release Info:</b> {release_date}
 
-<b>Total Seasons:</b> {seasons}
 
 <b>Requested by: {message.from_user.mention}</b>
 

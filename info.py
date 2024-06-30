@@ -108,7 +108,7 @@ PORT = environ.get("PORT", "8081")
 MSG_ALRT = environ.get('MSG_ALRT', 'Wʜᴀᴛ Aʀᴇ Yᴏᴜ Lᴏᴏᴋɪɴɢ Aᴛ ?')
 CUSTOM_FILE_CAPTION = environ.get("CUSTOM_FILE_CAPTION", "<b>File Name</b>: {file_name}\n\n<b>File Size:</b> {file_size}\n\n\n\n<b>Join Us: [MovieVerse Backup](https://t.me/movieversepremium)</b>")
 BATCH_FILE_CAPTION = environ.get("BATCH_FILE_CAPTION", "<b>File Name</b>: {file_name}\n\n\n\n<b>Join Us: [MovieVerse Backup](https://t.me/movieversepremium)</b>")
-IMDB_TEMPLATE = environ.get("IMDB_TEMPLATE", "<b>{title}</b>\n\n<b>Genres:</b> {genres}\n<b>Rating:</b> {rating}/10 Based on {votes} user ratings.\n<b>Languages: Hindi Or {languages}</b>\n<b>RunTime:</b> {runtime} Minutes\n<b>Release Info:</b> {release_date}\n\n<b>Total Seasons:</b> {seasons}\n\n<b>Story Line:</b> {plot}\n\n<b>Download {query} From Here\n\n[MovieVerse Backup](https://t.me/movieversepremium)</b>")
+IMDB_TEMPLATE = environ.get("IMDB_TEMPLATE", "<b>{title}</b>\n\n<b>Genres:</b> {genres}\n<b>Rating:</b> {rating}/10 Based on {votes} user ratings.\n<b>Languages: Hindi Or {languages}</b>\n<b>RunTime:</b> {runtime} Minutes\n<b>Release Info:</b> {release_date}\n\n<b>Story Line:</b> {plot}\n\n<b>Download {query} From Here\n\n[MovieVerse Backup](https://t.me/movieversepremium)</b>")
 MAX_LIST_ELM = environ.get("MAX_LIST_ELM", None)
 
 # Choose Option Settings 
@@ -119,7 +119,7 @@ QUALITIES = ["360p", "480p", "720p", "1080p", "1440p", "2160p"]
 YEARS = ["1900", "1991", "1992", "1993", "1994", "1995", "1996", "1997", "1998", "1999", "2000", "2001", "2002", "2003", "2004", "2005", "2006", "2007", "2008", "2009", "2010", "2011", "2012", "2013", "2014", "2015", "2016", "2017", "2018", "2019", "2020", "2021", "2022", "2023", "2024", "2025"]
 
 # Online Stream and Download
-STREAM_MODE = bool(environ.get('STREAM_MODE', False)) # Set True or False
+STREAM_MODE = bool(environ.get('STREAM_MODE', True)) # Set True or False
 
 # If Stream Mode Is True Then Fill All Required Variable, If False Then Don't Fill.
 MULTI_CLIENT = False
