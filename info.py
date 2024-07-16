@@ -15,7 +15,7 @@ def is_enabled(value, default):
 SESSION = environ.get('SESSION', 'MovieVerse')
 API_ID = int(environ.get('API_ID', '900652'))
 API_HASH = environ.get('API_HASH', 'a4183efcd370bf03011df1ba8772b1c9')
-BOT_TOKEN = environ.get('BOT_TOKEN', "6581063201:AAF6XLWv5T8LUhkr61lKVDfNZ5SJtU_lEd0")
+BOT_TOKEN = environ.get('BOT_TOKEN', "658:AAF6XLWv5T8LUhkr61lKVDfNZ5SJtU_lEd0")
 
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 1800))
