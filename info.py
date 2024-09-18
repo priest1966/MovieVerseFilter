@@ -1,4 +1,3 @@
-@@ -1,156 +0,0 @@
 import re
 from os import environ,getenv
 from Script import script 
