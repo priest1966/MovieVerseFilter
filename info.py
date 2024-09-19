@@ -20,7 +20,11 @@ def is_enabled(value, default):
 SESSION = environ.get('SESSION', 'MovieVerse1')
 API_ID = int(environ.get('API_ID', '900652'))
 API_HASH = environ.get('API_HASH', 'a4183efcd370bf03011df1ba8772b1c9')
+<<<<<<< HEAD
 BOT_TOKEN = environ.get('BOT_TOKEN', "")
+=======
+BOT_TOKEN = environ.get('BOT_TOKEN', "6581063201:AAGqa68KZtt9vxixOWXLzl8HtpNtor6W_i8")
+>>>>>>> a498e45e5055ce6573d8fb28e7a02772718b508c
 
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 1800))
@@ -30,29 +34,46 @@ MELCOW_VID = environ.get("MELCOW_VID", "https://t.me/howtoverify_97/3")
 SPELL_IMG = environ.get("SPELL_IMG", "https://graph.org/file/bdf74912ff48bcedbe9cc.jpg")
 
 # Admins, Channels & Users
+<<<<<<< HEAD
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', ''))
+=======
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002125544878'))
+>>>>>>> a498e45e5055ce6573d8fb28e7a02772718b508c
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '330029937').split()]
-CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1001986007776 -1001548900361 -1002145274472 -1002069136954 -1002091789879').split()]
+CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002145274472').split()]
 auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '').split()]
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
 
 # auth_channel means force subscribe channel.
 # if REQUEST_TO_JOIN_MODE is true then force subscribe work like request to join fsub, else if false then work like normal fsub.
 REQUEST_TO_JOIN_MODE = bool(environ.get('REQUEST_TO_JOIN_MODE', False)) # Set True Or False
+<<<<<<< HEAD
 TRY_AGAIN_BTN = bool(environ.get('TRY_AGAIN_BTN', False)) # Set True Or False (This try again button is only for request to join fsub not for normal fsub)
 auth_channel = environ.get('AUTH_CHANNEL', '-1001958911015') # give your force subscribe channel id here else leave it blank
 AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_channel) else None
+=======
+TRY_AGAIN_BTN = bool(environ.get('TRY_AGAIN_BTN', False)) # Set True Or False
+auth_channel = environ.get('AUTH_CHANNEL', '-1001958911015') # give your force subscribe channel id here else leave it blank
+auth_grp = environ.get('AUTH_GROUP', '-1002055042397') # give your force subscribe group id here else leave it blank
+AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_channel) else None
+AUTH_GROUPS = [int(ch) for ch in auth_grp.split()] if auth_grp else None
+support_chat_id = environ.get('SUPPORT_CHAT_ID', '-1002055042397')
+>>>>>>> a498e45e5055ce6573d8fb28e7a02772718b508c
 reqst_channel = environ.get('REQST_CHANNEL_ID', '-1002125544878')
 REQST_CHANNEL = int(reqst_channel) if reqst_channel and id_pattern.search(reqst_channel) else None
 support_chat_id = environ.get('SUPPORT_CHAT_ID', '-1002082710490')
 SUPPORT_CHAT_ID = int(support_chat_id) if support_chat_id and id_pattern.search(support_chat_id) else None
 INDEX_REQ_CHANNEL = int(environ.get('INDEX_REQ_CHANNEL', LOG_CHANNEL))
-FILE_STORE_CHANNEL = [int(ch) for ch in (environ.get('FILE_STORE_CHANNEL', '-1001986007776 -1001548900361 -1002145274472 -1002069136954 -1002091789879')).split()]
+FILE_STORE_CHANNEL = [int(ch) for ch in (environ.get('FILE_STORE_CHANNEL', '-1002145274472')).split()]
 DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in environ.get('DELETE_CHANNELS', '0').split()]
 
 # MongoDB information
+<<<<<<< HEAD
 SECONDDB_URI = environ.get('SECONDDB_URI', None)
 DATABASE_URI = environ.get('DATABASE_URI', "")
+=======
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://ice:lovely8249@cluster0.y9czlat.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+>>>>>>> a498e45e5055ce6573d8fb28e7a02772718b508c
 DATABASE_NAME = environ.get('DATABASE_NAME', "Cluster0")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_DB')
 
@@ -98,7 +119,7 @@ USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', True))
 
 # Token Verification Info :
 VERIFY = bool(environ.get('VERIFY', True))
-VERIFY_SECOND_SHORTNER = bool(environ.get('VERIFY_SECOND_SHORTNER', True))
+VERIFY_SECOND_SHORTNER = bool(environ.get('VERIFY_SECOND_SHORTNER', False))
 VERIFY_SHORTLINK_URL = environ.get('VERIFY_SHORTLINK_URL', 'mdiskshortner.link')
 VERIFY_SHORTLINK_API = environ.get('VERIFY_SHORTLINK_API', 'ca7ccd8b6e197a03f98baec5078920bf26987dc2')
 # if verify second shortner is True then fill below url and api
