@@ -35,7 +35,7 @@ AUTH_USERS = (auth_users + ADMINS) if auth_users else []
 # if REQUEST_TO_JOIN_MODE is true then force subscribe work like request to join fsub, else if false then work like normal fsub.
 REQUEST_TO_JOIN_MODE = bool(environ.get('REQUEST_TO_JOIN_MODE', False)) # Set True Or False
 TRY_AGAIN_BTN = bool(environ.get('TRY_AGAIN_BTN', False)) # Set True Or False
-auth_channel = environ.get('AUTH_CHANNEL', '-1001958911015') # give your force subscribe channel id here else leave it blank
+auth_channel = environ.get('AUTH_CHANNEL', '-1002050647275') # give your force subscribe channel id here else leave it blank
 auth_grp = environ.get('AUTH_GROUP', '') # give your force subscribe group id here else leave it blank
 AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_channel) else None
 AUTH_GROUPS = [int(ch) for ch in auth_grp.split()] if auth_grp else None
@@ -88,8 +88,8 @@ NO_RESULTS_MSG = bool(environ.get("NO_RESULTS_MSG", False))
 USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', True))
 
 # Token Verification Info :
-VERIFY = bool(environ.get('VERIFY', True))
-VERIFY_SECOND_SHORTNER = bool(environ.get('VERIFY_SECOND_SHORTNER', True))
+VERIFY = bool(environ.get('VERIFY', False))
+VERIFY_SECOND_SHORTNER = bool(environ.get('VERIFY_SECOND_SHORTNER', False))
 VERIFY_SHORTLINK_URL = environ.get('VERIFY_SHORTLINK_URL', 'mdiskshortner.link')
 VERIFY_SHORTLINK_API = environ.get('VERIFY_SHORTLINK_API', 'ca7ccd8b6e197a03f98baec5078920bf26987dc2')
 # if verify second shortner is True then fill below url and api
@@ -98,9 +98,9 @@ VERIFY_SND_SHORTLINK_API = environ.get('VERIFY_SND_SHORTLINK_API', '9b3b87cc699f
 VERIFY_TUTORIAL = environ.get('VERIFY_TUTORIAL', 'https://t.me/howtoverify_97/3')
 
 # Shortlink Info
-SHORTLINK_MODE = bool(environ.get('SHORTLINK_MODE', False))
-SHORTLINK_URL = environ.get('SHORTLINK_URL', 'mdiskshortner.link')
-SHORTLINK_API = environ.get('SHORTLINK_API', 'ca7ccd8b6e197a03f98baec5078920bf26987dc2')
+SHORTLINK_MODE = bool(environ.get('SHORTLINK_MODE', True))
+SHORTLINK_URL = environ.get('SHORTLINK_URL', 'omegalinks.in')
+SHORTLINK_API = environ.get('SHORTLINK_API', '9b3b87cc699f7874fa7193531decf02364770e73')
 
 # Others
 MAX_B_TN = environ.get("MAX_B_TN", "5")
